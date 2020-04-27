@@ -6,6 +6,7 @@ Based on "A simple docker setup for hello world nodejs application" at https://m
 ## STEP 1: Creating simple nodejs hello world app
 
 Assuming that nodejs installed on your system.
+See https://github.com/vanHeemstraSystems/how-to-install-nodejs-npm-on-centos-7
 
 ### Installation
 create new directory and initialize npm:

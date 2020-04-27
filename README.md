@@ -23,3 +23,34 @@ npm will create a package.json which holds the dependencies of our app and follo
 ````javascript
 npm install express --save
 ````
+
+### creating index.js with simple http server that will serve on port 8080
+
+````javascript
+//now it load express module with `require` directive
+var express = require('express')
+var app = express()
+//Define request response in root URL (/) and response with text Hello World!
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+//Launch listening server on port 8080 and consoles the log.
+app.listen(8080, function () {
+  console.log('app listening on port 8080!')
+})
+````
+
+### running this app
+
+````javascript
+node index.js
+````
+
+this is show the log as that app listening on port 8080. You can stop it with CTRL + C. And check out http://localhost:8080/ in your browser, it will response Hello World!. Alternatively if you live in terminal you can do:
+
+````javascript
+curl http://localhost:8080/
+````
+
+which will return same Hello World! in the terminal.
+

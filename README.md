@@ -24,7 +24,7 @@ npm will create a package.json which holds the dependencies of our app and follo
 npm install express --save
 ````
 
-### creating index.js with simple http server that will serve on port 8080
+### Creating index.js with simple http server that will serve on port 8080
 
 ````javascript
 //now it load express module with `require` directive
@@ -40,7 +40,7 @@ app.listen(8080, function () {
 })
 ````
 
-### running this app
+### Running this app
 
 ````javascript
 node index.js
@@ -58,7 +58,7 @@ which will return the same Hello World! in the terminal.
 
 Lets assume docker is installed
 
-### create Dockerfile to root directory
+### Create Dockerfile to root directory
 
 ````javascript
 ## it uses node js image alpine version from image registries.
@@ -75,7 +75,7 @@ CMD node index.js
 EXPOSE 8080
 ````
 
-To build this image
+### To build this image
 
 ````javascript
 docker build -t web .

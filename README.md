@@ -46,11 +46,11 @@ app.listen(8080, function () {
 node index.js
 ````
 
-this is show the log as that app listening on port 8080. You can stop it with CTRL + C. And check out http://localhost:8080/ in your browser, it will response Hello World!. Alternatively if you live in terminal you can do:
+This will show the log as that app is listening on port 8080. You can stop it with CTRL + C. And check out http://localhost:8080/ in your browser, it will respond with Hello World!. Alternatively if you live in a terminal, you can do:
 
 ````javascript
 curl http://localhost:8080/
 ````
 
-which will return same Hello World! in the terminal.
+which will return the same Hello World! in the terminal.
 

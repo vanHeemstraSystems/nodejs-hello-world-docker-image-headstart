@@ -57,7 +57,7 @@ which will return the same Hello World! in the terminal.
 
 ## STEP 2: dockerize our app
 
-Lets assume docker is installed
+Lets assume docker is installed. See also https://github.com/vanHeemstraSystems/docker-headstart
 
 ### Create Dockerfile to root directory
 

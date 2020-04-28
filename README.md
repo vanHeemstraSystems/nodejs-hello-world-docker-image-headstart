@@ -84,6 +84,8 @@ docker build -t web .
 
 ## STEP 3: using docker compose
 
+NOTE: Requires Python 3 or later version, see also https://github.com/vanHeemstraSystems/python-headstart
+
 ````
 version: ‘3’ # version of docker-compose
 services: # defining service/s

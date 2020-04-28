@@ -81,3 +81,16 @@ EXPOSE 8080
 ````javascript
 docker build -t web .
 ````
+
+## STEP 3: using docker compose
+
+````
+version: ‘3’ # version of docker-compose
+services: # defining service/s
+  web: # name of the service
+    image: nodejs/hello # image named given
+    build: . # directory what to build, here it is root directory
+    ports:
+      – “8080:8080” # defining port for our app
+````
+

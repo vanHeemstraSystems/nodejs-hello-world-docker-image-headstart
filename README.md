@@ -94,3 +94,20 @@ services: # defining service/s
       – “8080:8080” # defining port for our app
 ````
 
+### how to run docker compose
+
+````
+docker-compose up ## {-d for detached mode or background}
+````
+
+or for new fresh build use this
+
+````
+docker-compose up --build ## {--detach for running in background}
+````
+
+to remove the container
+
+````
+docker-compose rm
+````

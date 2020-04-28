@@ -28,7 +28,7 @@ npm install express --save
 ### Creating index.js with simple http server that will serve on port 8080
 
 ````javascript
-//now it load express module with `require` directive
+//now it loads express module with `require` directive
 var express = require('express')
 var app = express()
 //Define request response in root URL (/) and response with text Hello World!

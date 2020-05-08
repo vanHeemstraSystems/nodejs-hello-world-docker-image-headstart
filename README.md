@@ -1,7 +1,9 @@
 nodejs-hello-world-docker-image-headstart
 # NodeJS "Hello World" Docker Image  - Headstart
 
-Based on "A simple docker setup for hello world nodejs application" at https://medium.com/@sssanjaya/a-simple-docker-setup-for-simple-hello-world-nodejs-application-bcf79bb608a0
+- Based on "A simple docker setup for hello world nodejs application" at https://medium.com/@sssanjaya/a-simple-docker-setup-for-simple-hello-world-nodejs-application-bcf79bb608a0
+
+- Based on "Dockerizing a Node.js web app" at https://nodejs.org/fr/docs/guides/nodejs-docker-webapp/
 
 ## STEP 1: Creating simple nodejs hello world app
 
@@ -60,6 +62,29 @@ which will return the same Hello World! in the terminal.
 Lets assume docker is installed. See also https://github.com/vanHeemstraSystems/docker-headstart
 
 ### Create Dockerfile to root directory
+
+Create an empty file called Dockerfile in the root directory of the (local) repository:
+
+````javascript
+touch Dockerfile
+````
+
+Open the Dockerfile in your favorite text editor (e.g. vim)
+
+````
+vi Dockerfile
+````
+
+The first thing we need to do is define from what image we want to build from. Here we will use the latest LTS (long term support) version 10 of node available from the Docker Hub:
+
+````
+## it uses node js image alpine version from image registries.
+FROM node:10
+````
+
+more ...
+
+Ultimately your Dockerfile should look like below:
 
 ````javascript
 ## it uses node js image alpine version from image registries.

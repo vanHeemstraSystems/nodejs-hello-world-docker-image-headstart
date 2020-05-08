@@ -75,7 +75,7 @@ Open the Dockerfile in your favorite text editor (e.g. vim)
 vi Dockerfile
 ````
 
-The first thing we need to do is define from what image we want to build from. Here we will use the latest LTS (long term support) version 10 of node available from the Docker Hub:
+The first thing we need to do is define from what image we want to build from. Here we will use the latest LTS (long term support) version 10 of node available from the Docker Hub. Enter the following in the Dockerfile:
 
 ````
 ## it uses node js image alpine version from image registries.
